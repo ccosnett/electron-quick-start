@@ -1,11 +1,5 @@
 run = ["electron", "index.html", "--no-sandbox"]
 language = "nodejs"
 
-[env]
-XDG_CONFIG_HOME = "/home/runner/${REPL_SLUG}/.config"
-
 [nix]
 channel = "stable-24_05"
-
-[deployment]
-run = ["sh", "-c", "npm run start"]
